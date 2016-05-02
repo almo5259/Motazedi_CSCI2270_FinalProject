@@ -348,12 +348,11 @@ void MovieCatalog::removeCart(MovieNode *sub) {
             cart.erase(cart.begin() + i);
         }
     }
-    viewCart();
 }
 
 void MovieCatalog::viewCart() {
+    top:;
     int total = 0;
-
     cout << "___________Your Cart__________" << endl;
     for (int i = 0; i < cart.size(); i++) {
         cart[i] -> ID = i + 1;
@@ -399,6 +398,7 @@ void MovieCatalog::viewCart() {
                     if (cart[j] -> ID = a2n)
                         removeCart(cart[j]);
                 }
+                goto top;
             }
         }
         else if (choice == "3") {
