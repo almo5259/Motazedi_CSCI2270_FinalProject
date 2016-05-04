@@ -395,7 +395,7 @@ void MovieCatalog::viewCart() {
                 int a2n = stoi(a);
 
                 for (int j = 0; j < cart.size(); j++) {
-                    if (cart[j] -> ID = a2n)
+                    if (cart[j] -> ID == a2n)
                         removeCart(cart[j]);
                 }
                 goto top;
